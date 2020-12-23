@@ -12,35 +12,24 @@ services:
   kafka1:
     image: wurstmeister/kafka
     container_name: kafka1
+    restart: always
     ports:
       - "9092:9092"
     networks:
       - "kafka-net"
     environment:
       TZ: "Asia/Shanghai"
-      KAFKA_LISTENERS: PLAINTEXT://47.97.205.190:9092
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka1:9092    ## 修改:宿主机IP
+      LANG: "en_US.UTF-8"
+      KAFKA_LISTENERS: CLIENT://:9092,EXTERNAL://:9093
+      KAFKA_ADVERTISED_LISTENERS: CLIENT://47.97.205.190:9092,EXTERNAL://47.97.205.190:9093    ## 修改:宿主机IP
       KAFKA_ZOOKEEPER_CONNECT: "zk:2181"
       KAFKA_BROKER_ID: 1
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: CLIENT:PLAINTEXT,EXTERNAL:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: CLIENT
     depends_on:
       - zk
-  kafka2:
-    image: wurstmeister/kafka
-    container_name: kafka2
-    ports:
-      - "9093:9093"
-    networks:
-      - "kafka-net"
-    environment:
-      TZ: "Asia/Shanghai"
-      KAFKA_LISTENERS: PLAINTEXT://47.97.205.190:9093
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka2:9093    ## 修改:宿主机IP
-      KAFKA_ZOOKEEPER_CONNECT: "zk:2181"
-      KAFKA_BROKER_ID: 2
-      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
-    depends_on:
-      - zk
+
   kafka-manager:
     image: sheepkiller/kafka-manager              ## 镜像：开源的web管理kafka集群的界面
     container_name: kafka-manager
