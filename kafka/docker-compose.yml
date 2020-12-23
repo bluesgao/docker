@@ -25,6 +25,7 @@ services:
       KAFKA_ZOOKEEPER_CONNECT: "zk:2181"
       KAFKA_BROKER_ID: 1
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      JMX_PORT: 19901
     depends_on:
       - zk
   kafka2:
@@ -43,6 +44,7 @@ services:
       KAFKA_ZOOKEEPER_CONNECT: "zk:2181"
       KAFKA_BROKER_ID: 2
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      JMX_PORT: 19902
     depends_on:
       - zk
   kafka3:
@@ -61,6 +63,7 @@ services:
       KAFKA_ZOOKEEPER_CONNECT: "zk:2181"
       KAFKA_BROKER_ID: 3
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      JMX_PORT: 19903
     depends_on:
       - zk
   kafka-manager:
