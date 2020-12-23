@@ -2,7 +2,7 @@ version: '3'
 services:
   zk:
     image: wurstmeister/zookeeper
-    restart: unless-stopped
+    restart: always
     container_name: zk
     hostname: zk
     networks:
@@ -14,19 +14,20 @@ services:
     container_name: kafka1
     ports:
       - "9092:9092"
-      - "10001:10001"
+      #- "10001:10001"
     networks:
       - "kafka-net"
     environment:
+      TZ: "Asia/Shanghai"
       KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
       KAFKA_HOST_NAME: kafka1
-      KAFKA_ADVERTISED_HOST_NAME: kafka1                     ## 修改:宿主机IP
+      KAFKA_ADVERTISED_HOST_NAME: 47.97.205.190                     ## 修改:宿主机IP
       KAFKA_ADVERTISED_PORT: 9092
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://47.97.205.190:9092    ## 修改:宿主机IP
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka1:9092    ## 修改:宿主机IP
       KAFKA_ZOOKEEPER_CONNECT: "zk:2181"
       KAFKA_BROKER_ID: 1
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
-      JMX_PORT: 10001
+      #JMX_PORT: 10001
     depends_on:
       - zk
   kafka2:
@@ -34,39 +35,19 @@ services:
     container_name: kafka2
     ports:
       - "9093:9093"
-      - "10002:10002"
+      #- "10002:10002"
     networks:
       - "kafka-net"
     environment:
       KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9093
       KAFKA_HOST_NAME: kafka2
-      KAFKA_ADVERTISED_HOST_NAME: kafka2                     ## 修改:宿主机IP
+      KAFKA_ADVERTISED_HOST_NAME: 47.97.205.190                     ## 修改:宿主机IP
       KAFKA_ADVERTISED_PORT: 9093
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://47.97.205.190:9093    ## 修改:宿主机IP
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka2:9093    ## 修改:宿主机IP
       KAFKA_ZOOKEEPER_CONNECT: "zk:2181"
       KAFKA_BROKER_ID: 2
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
-      JMX_PORT: 10002
-    depends_on:
-      - zk
-  kafka3:
-    image: wurstmeister/kafka
-    container_name: kafka3
-    ports:
-      - "9094:9094"
-      - "10003:10003"
-    networks:
-      - "kafka-net"
-    environment:
-      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9094
-      KAFKA_HOST_NAME: kafka3
-      KAFKA_ADVERTISED_HOST_NAME: kafka3                     ## 修改:宿主机IP
-      KAFKA_ADVERTISED_PORT: 9094
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://47.97.205.190:9094    ## 修改:宿主机IP
-      KAFKA_ZOOKEEPER_CONNECT: "zk:2181"
-      KAFKA_BROKER_ID: 3
-      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
-      JMX_PORT: 10003
+      #JMX_PORT: 10002
     depends_on:
       - zk
   kafka-manager:
