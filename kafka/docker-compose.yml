@@ -9,7 +9,6 @@ services:
       - "kafka-net"
     ports:
       - "2181:2181"
-
   kafka1:
     image: wurstmeister/kafka
     container_name: kafka1
@@ -26,7 +25,6 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     depends_on:
       - zk
-
   kafka2:
     image: wurstmeister/kafka
     container_name: kafka2
@@ -43,8 +41,7 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     depends_on:
       - zk
-
- kafka3:
+  kafka3:
     image: wurstmeister/kafka
     container_name: kafka3
     ports:
@@ -60,7 +57,6 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     depends_on:
       - zk
-
   kafka-manager:
     image: sheepkiller/kafka-manager              ## 镜像：开源的web管理kafka集群的界面
     environment:
