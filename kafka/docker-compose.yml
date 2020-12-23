@@ -59,6 +59,7 @@ services:
       - zk
   kafka-manager:
     image: sheepkiller/kafka-manager              ## 镜像：开源的web管理kafka集群的界面
+    container_name: kafka-manager
     environment:
         ZK_HOSTS: "zk:2181"                   ## 修改:宿主机IP
     ports:
