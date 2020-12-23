@@ -1,0 +1,58 @@
+version: "3.2"
+services:
+    elasticsearch:
+      image: docker.elastic.co/elasticsearch/elasticsearch:7.4.2
+      container_name: elasticsearch
+      environment:
+        - discovery.type=single-node
+        - bootstrap.memory_lock=true
+        - discovery.seed_hosts=elasticsearch
+        - ES_JAVA_OPTS=-Xms256m -Xmx256m
+        - ELASTIC_PASSWORD=123456
+      volumes:
+        - ./es/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:rw
+        - ./es/data:/usr/share/elasticsearch/data:rw
+        - ./es/plugins:/usr/share/elasticsearch/plugins:rw
+      restart: always
+      ports:
+        - 9200:9200
+        - 9300:9300
+      networks:
+        - "elk-net"
+    kibana:
+        image: docker.elastic.co/kibana/kibana:7.4.2
+        container_name: kibana
+        volumes:
+          - ./kibana/config/kibana.yml:/usr/share/kibana/config/kibana.yml:rw
+          - ./kibana/data:/usr/share/kibana/data:rw
+        ports:
+          - "5601:5601"
+        networks:
+          - "elk-net"
+
+    # filebeat:
+    #   image: docker.elastic.co/beats/filebeat:7.4.2
+    #   volumes:
+    #    - type: bind
+    #      source: "./filebeat/2018.log"
+    #      target: "/2018.log"
+    #    - type: bind
+    #      source: "./filebeat/filebeat.yml"
+    #      target: "/usr/share/filebeat/filebeat.yml"
+    #   networks:
+    #     - "elk-net"
+    #   depends_on:
+    #     - "logstash"
+    # logstash:
+    #   image: docker.elastic.co/logstash/logstash:7.4.2
+    #   container_name: logstash
+    #   volumes:
+    #     - type: bind
+    #       source: "./logstash/logstash_stdout.conf"
+    #       target: "/usr/share/logstash/pipeline/logstash.conf"
+    #   networks:
+    #     - "elk-net"
+
+networks:
+  elk-net:
+    driver: bridge

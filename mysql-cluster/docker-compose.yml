@@ -1,0 +1,41 @@
+version: '3'
+services:
+  mysql-master:
+    environment:
+      MYSQL_ROOT_PASSWORD: "123456"
+      MYSQL_USER: "test"
+      MYSQL_PASSWORD: "123456"
+      MYSQL_DATABASE: "test"
+    image: "mysql:5.7"
+    restart: always
+    container_name: "mysql-master"
+    volumes:
+      - "./master/data:/var/lib/mysql"
+      - "./master/conf/my.cnf:/etc/my.cnf"
+    ports:
+      - "3306:3306"
+    networks:
+      - mysql-cluster
+
+  mysql-slave:
+    environment:
+      MYSQL_ROOT_PASSWORD: "123456"
+      MYSQL_USER: "test"
+      MYSQL_PASSWORD: "123456"
+      MYSQL_DATABASE: "test"
+    image: "mysql:5.7"
+    restart: always
+    container_name: "mysql-slave"
+    volumes:
+      - "./slave/data:/var/lib/mysql"
+      - "./slave/conf/my.cnf:/etc/my.cnf"
+    ports:
+      - "3307:3306"
+    depends_on:
+      - mysql-master
+    networks:
+      - mysql-cluster
+
+networks:
+  mysql-cluster:
+    driver: bridge

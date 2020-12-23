@@ -1,0 +1,73 @@
+version: '3'
+services:
+  zk:
+    image: wurstmeister/zookeeper
+    restart: unless-stopped
+    container_name: zk
+    hostname: zk
+    networks:
+      - "kafka-net"
+    ports:
+      - "2181:2181"
+
+  kafka1:
+    image: wurstmeister/kafka
+    container_name: kafka1
+    ports:
+      - "9092:9092"
+    networks:
+      - "kafka-net"
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: kafka1                     ## 修改:宿主机IP
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092    ## 修改:宿主机IP
+      KAFKA_ZOOKEEPER_CONNECT: "zk:2181"
+      KAFKA_ADVERTISED_PORT: 9092
+      KAFKA_BROKER_ID: 1
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    depends_on:
+      - zk
+
+  kafka2:
+    image: wurstmeister/kafka
+    container_name: kafka2
+    ports:
+      - "19092:9092"
+    networks:
+      - "kafka-net"
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: kafka2                     ## 修改:宿主机IP
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka2:19092    ## 修改:宿主机IP
+      KAFKA_ZOOKEEPER_CONNECT: "zk:2181"
+      KAFKA_ADVERTISED_PORT: 19092
+      KAFKA_BROKER_ID: 2
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    depends_on:
+      - zk
+
+ kafka3:
+    image: wurstmeister/kafka
+    container_name: kafka3
+    ports:
+      - "29092:9092"
+    networks:
+      - "kafka-net"
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: kafka3                     ## 修改:宿主机IP
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka3:29092    ## 修改:宿主机IP
+      KAFKA_ZOOKEEPER_CONNECT: "zk:2181"
+      KAFKA_ADVERTISED_PORT: 29092
+      KAFKA_BROKER_ID: 3
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    depends_on:
+      - zk
+
+  kafka-manager:
+    image: sheepkiller/kafka-manager              ## 镜像：开源的web管理kafka集群的界面
+    environment:
+        ZK_HOSTS: "zk:2181"                   ## 修改:宿主机IP
+    ports:
+      - "9000:9000"                               ## 暴露端口
+
+networks:
+  kafka-net:
+    driver: bridge
