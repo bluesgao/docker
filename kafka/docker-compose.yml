@@ -18,7 +18,7 @@ services:
       - "kafka-net"
     environment:
       KAFKA_ADVERTISED_HOST_NAME: kafka1                     ## 修改:宿主机IP
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092    ## 修改:宿主机IP
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka1:9092    ## 修改:宿主机IP
       KAFKA_ZOOKEEPER_CONNECT: "zk:2181"
       KAFKA_ADVERTISED_PORT: 9092
       KAFKA_BROKER_ID: 1
