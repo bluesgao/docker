@@ -14,6 +14,7 @@ services:
     container_name: kafka1
     ports:
       - "9092:9092"
+      - "10001:10001"
     networks:
       - "kafka-net"
     environment:
@@ -33,6 +34,7 @@ services:
     container_name: kafka2
     ports:
       - "9093:9093"
+      - "10002:10002"
     networks:
       - "kafka-net"
     environment:
@@ -52,6 +54,7 @@ services:
     container_name: kafka3
     ports:
       - "9094:9094"
+      - "10003:10003"
     networks:
       - "kafka-net"
     environment:
