@@ -35,6 +35,10 @@ select * from mysql.user where user='slave';
 ## 创建用户并分配权限
 GRANT replication slave ON *.* TO 'slave'@'%' IDENTIFIED BY '123456';
 
+GRANT SELECT, INSERT,UPDATE ON order.* TO 'test'@'%';
+
+GRANT ALL ON *.* TO 'admin'@'%' IDENTIFIED BY 'Gx-123456';
+
 ## 刷新权限：
 flush privileges;
 ## 查看master状态

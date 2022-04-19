@@ -12,7 +12,9 @@ kafka-console-consumer.sh  --bootstrap-server localhost:9092 --topic binlog-test
 
 #### mysql 新建用户 ######################################################################
 # mysql 新建canal用户，并赋权
-GRANT SELECT, REPLICATION SLAVE, REPLICATION CLIENT ON *.* TO 'canal'@'%';
+GRANT SELECT, REPLICATION SLAVE, REPLICATION CLIENT ,LOCK TABLES ON *.* TO 'canal'@'%' IDENTIFIED BY '123456';
+
+GRANT SELECT, RELOAD, SHOW DATABASES, REPLICATION SLAVE, REPLICATION CLIENT ,LOCK TABLES ON *.* TO 'user' IDENTIFIED BY 'password';
 FLUSH PRIVILEGES;
 
 #### mysql 存储过程 ######################################################################

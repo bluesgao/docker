@@ -1,0 +1,56 @@
+version: "3.3"
+services:
+  database:
+    image: debezium/example-mysql:1.3
+    container_name: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      - POSTGRES_PASSWORD=mima
+
+  zookeeper:
+    image: debezium/zookeeper:1.3
+    container_name: zookeeper
+    ports:
+      - "2181:2181"
+      - "2888:2888"
+      - "3888:3888"
+  kafka:
+    image: debezium/kafka:1.3
+    container_name: kafka
+    ports:
+      - "9092:9092"
+    depends_on:
+      - zookeeper
+    links:
+      - "zookeeper:zookeeper"
+    environment:
+      - BROKER_ID=1
+      - ZOOKEEPER_CONNECT=zookeeper
+      - ADVERTISED_HOST_NAME=kafka
+
+  connector:
+    image: debezium/connect:1.3
+    container_name: connector
+    expose:
+      - "8083"
+    depends_on:
+      - kafka
+      - database
+    links:
+      - "zookeeper:zookeeper"
+      - "kafka:kafka"
+      - "database:database"
+    environment:
+      - GROUP_ID=1
+      - CONFIG_STORAGE_TOPIC=my-connect-configs
+      - OFFSET_STORAGE_TOPIC=my-connect-offsets
+  connector-config:
+    image: curlimages/curl
+    depends_on:
+      - connector
+    links:
+      - "connector:connector"
+    command: ["curl -i -X POST -H \"Accept:application/json\" -H \"Content-Type:application/json\" connector:8083/connectors/ -d '{ \"name\": \"connector\", \"config\": { \"connector.class\": \"io.debezium.connector.postgresql.PostgresConnector\", \"tasks.max\": \"1\", \"database.hostname\": \"database\", \"database.port\": \"5432\", \"database.user\": \"postgres\", \"database.password\": \"mima\",\"database.dbnam
+e\":\"postgres\", \"database.server.name\": \"postgres\"} }'"]
+
