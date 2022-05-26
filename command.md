@@ -125,5 +125,10 @@ docker run -p 9000:9000 --name minio \
  -di minio/minio server /var/minio
 
 
+docker run -itd --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -e MYSQL_DATABASE=gateway mysql:5.7.29
 
-
+## prometheus
+docker run -itd --name prometheus -p 9090:9090 \
+-v /Users/bluesgao/docker/prometheus/conf/prometheus.yml:/etc/prometheus/prometheus.yml \
+-v /etc/localtime:/etc/localtime:ro \
+ubuntu/prometheus:latest

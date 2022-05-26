@@ -2057,3 +2057,922 @@
 29:C 15 Apr 2022 06:24:51.598 * DB saved on disk
 29:C 15 Apr 2022 06:24:51.604 * RDB: 0 MB of memory used by copy-on-write
 1:M 15 Apr 2022 06:24:51.683 * Background saving terminated with success
+1:C 19 Apr 2022 03:33:20.456 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 19 Apr 2022 03:33:20.460 # Redis version=5.0.12, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 19 Apr 2022 03:33:20.463 # Configuration loaded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.12 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 19 Apr 2022 03:33:20.479 # Server initialized
+1:M 19 Apr 2022 03:33:20.482 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 19 Apr 2022 03:33:20.542 * DB loaded from append only file: 0.057 seconds
+1:M 19 Apr 2022 03:33:20.546 * Ready to accept connections
+1:M 19 Apr 2022 03:34:21.090 * 10000 changes in 60 seconds. Saving...
+1:M 19 Apr 2022 03:34:21.094 * Background saving started by pid 20
+20:C 19 Apr 2022 03:34:21.129 * DB saved on disk
+20:C 19 Apr 2022 03:34:21.133 * RDB: 0 MB of memory used by copy-on-write
+1:M 19 Apr 2022 03:34:21.199 * Background saving terminated with success
+1:signal-handler (1650347928) Received SIGTERM scheduling shutdown...
+1:M 19 Apr 2022 05:58:48.276 # User requested shutdown...
+1:M 19 Apr 2022 05:58:48.282 * Calling fsync() on the AOF file.
+1:M 19 Apr 2022 05:58:48.286 * Saving the final RDB snapshot before exiting.
+1:M 19 Apr 2022 05:58:48.301 * DB saved on disk
+1:M 19 Apr 2022 05:58:48.304 * Removing the pid file.
+1:M 19 Apr 2022 05:58:48.312 # Redis is now ready to exit, bye bye...
+1:C 19 Apr 2022 06:08:19.662 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 19 Apr 2022 06:08:19.664 # Redis version=5.0.12, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 19 Apr 2022 06:08:19.666 # Configuration loaded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.12 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 19 Apr 2022 06:08:19.693 # Server initialized
+1:M 19 Apr 2022 06:08:19.696 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 19 Apr 2022 06:08:19.787 * DB loaded from append only file: 0.088 seconds
+1:M 19 Apr 2022 06:08:19.789 * Ready to accept connections
+1:M 19 Apr 2022 06:09:20.064 * 10000 changes in 60 seconds. Saving...
+1:M 19 Apr 2022 06:09:20.156 * Background saving started by pid 20
+20:C 19 Apr 2022 06:09:21.013 * DB saved on disk
+20:C 19 Apr 2022 06:09:21.016 * RDB: 0 MB of memory used by copy-on-write
+1:M 19 Apr 2022 06:09:21.087 * Background saving terminated with success
+1:M 19 Apr 2022 07:04:14.155 * 1 changes in 900 seconds. Saving...
+1:M 19 Apr 2022 07:04:14.172 * Background saving started by pid 21
+21:C 19 Apr 2022 07:04:14.259 * DB saved on disk
+21:C 19 Apr 2022 07:04:14.269 * RDB: 0 MB of memory used by copy-on-write
+1:M 19 Apr 2022 07:04:14.281 * Background saving terminated with success
+1:M 19 Apr 2022 07:19:15.054 * 1 changes in 900 seconds. Saving...
+1:M 19 Apr 2022 07:19:15.062 * Background saving started by pid 22
+22:C 19 Apr 2022 07:19:15.099 * DB saved on disk
+22:C 19 Apr 2022 07:19:15.102 * RDB: 0 MB of memory used by copy-on-write
+1:M 19 Apr 2022 07:19:15.169 * Background saving terminated with success
+1:M 19 Apr 2022 07:34:16.082 * 1 changes in 900 seconds. Saving...
+1:M 19 Apr 2022 07:34:16.088 * Background saving started by pid 23
+23:C 19 Apr 2022 07:34:16.104 * DB saved on disk
+23:C 19 Apr 2022 07:34:16.110 * RDB: 0 MB of memory used by copy-on-write
+1:M 19 Apr 2022 07:34:16.192 * Background saving terminated with success
+1:M 19 Apr 2022 07:49:38.403 * 1 changes in 900 seconds. Saving...
+1:M 19 Apr 2022 07:49:38.433 * Background saving started by pid 24
+24:C 19 Apr 2022 07:49:38.462 * DB saved on disk
+24:C 19 Apr 2022 07:49:38.466 * RDB: 0 MB of memory used by copy-on-write
+1:M 19 Apr 2022 07:49:38.551 * Background saving terminated with success
+1:M 19 Apr 2022 08:04:39.105 * 1 changes in 900 seconds. Saving...
+1:M 19 Apr 2022 08:04:39.114 * Background saving started by pid 25
+25:C 19 Apr 2022 08:04:39.128 * DB saved on disk
+25:C 19 Apr 2022 08:04:39.135 * RDB: 0 MB of memory used by copy-on-write
+1:M 19 Apr 2022 08:04:39.221 * Background saving terminated with success
+1:M 19 Apr 2022 08:19:40.017 * 1 changes in 900 seconds. Saving...
+1:M 19 Apr 2022 08:19:40.025 * Background saving started by pid 26
+26:C 19 Apr 2022 08:19:40.037 * DB saved on disk
+26:C 19 Apr 2022 08:19:40.043 * RDB: 0 MB of memory used by copy-on-write
+1:M 19 Apr 2022 08:19:40.131 * Background saving terminated with success
+1:M 19 Apr 2022 09:01:37.981 * 1 changes in 900 seconds. Saving...
+1:M 19 Apr 2022 09:01:37.990 * Background saving started by pid 27
+27:C 19 Apr 2022 09:01:38.029 * DB saved on disk
+27:C 19 Apr 2022 09:01:38.034 * RDB: 0 MB of memory used by copy-on-write
+1:M 19 Apr 2022 09:01:38.100 * Background saving terminated with success
+1:M 19 Apr 2022 09:16:39.092 * 1 changes in 900 seconds. Saving...
+1:M 19 Apr 2022 09:16:39.101 * Background saving started by pid 28
+28:C 19 Apr 2022 09:16:39.114 * DB saved on disk
+28:C 19 Apr 2022 09:16:39.117 * RDB: 0 MB of memory used by copy-on-write
+1:M 19 Apr 2022 09:16:39.209 * Background saving terminated with success
+1:M 19 Apr 2022 09:31:40.018 * 1 changes in 900 seconds. Saving...
+1:M 19 Apr 2022 09:31:40.024 * Background saving started by pid 29
+29:C 19 Apr 2022 09:31:40.044 * DB saved on disk
+29:C 19 Apr 2022 09:31:40.048 * RDB: 0 MB of memory used by copy-on-write
+1:M 19 Apr 2022 09:31:40.135 * Background saving terminated with success
+1:M 19 Apr 2022 09:57:42.720 * 1 changes in 900 seconds. Saving...
+1:M 19 Apr 2022 09:57:42.908 * Background saving started by pid 30
+30:C 19 Apr 2022 09:57:42.959 * DB saved on disk
+30:C 19 Apr 2022 09:57:42.966 * RDB: 0 MB of memory used by copy-on-write
+1:M 19 Apr 2022 09:57:43.028 * Background saving terminated with success
+1:M 19 Apr 2022 10:12:44.032 * 1 changes in 900 seconds. Saving...
+1:M 19 Apr 2022 10:12:44.038 * Background saving started by pid 31
+31:C 19 Apr 2022 10:12:44.049 * DB saved on disk
+31:C 19 Apr 2022 10:12:44.054 * RDB: 0 MB of memory used by copy-on-write
+1:M 19 Apr 2022 10:12:44.145 * Background saving terminated with success
+1:M 19 Apr 2022 11:26:29.801 * 1 changes in 900 seconds. Saving...
+1:M 19 Apr 2022 11:26:29.813 * Background saving started by pid 32
+32:C 19 Apr 2022 11:26:29.842 * DB saved on disk
+32:C 19 Apr 2022 11:26:29.854 * RDB: 0 MB of memory used by copy-on-write
+1:M 19 Apr 2022 11:26:29.920 * Background saving terminated with success
+1:M 19 Apr 2022 11:41:30.063 * 1 changes in 900 seconds. Saving...
+1:M 19 Apr 2022 11:41:30.113 * Background saving started by pid 33
+33:C 19 Apr 2022 11:41:30.226 * DB saved on disk
+33:C 19 Apr 2022 11:41:30.231 * RDB: 0 MB of memory used by copy-on-write
+1:M 19 Apr 2022 11:41:30.334 * Background saving terminated with success
+1:M 19 Apr 2022 12:16:17.273 * 1 changes in 900 seconds. Saving...
+1:M 19 Apr 2022 12:16:17.280 * Background saving started by pid 34
+34:C 19 Apr 2022 12:16:17.302 * DB saved on disk
+34:C 19 Apr 2022 12:16:17.307 * RDB: 0 MB of memory used by copy-on-write
+1:M 19 Apr 2022 12:16:17.389 * Background saving terminated with success
+1:M 19 Apr 2022 12:31:18.012 * 1 changes in 900 seconds. Saving...
+1:M 19 Apr 2022 12:31:18.018 * Background saving started by pid 35
+35:C 19 Apr 2022 12:31:18.034 * DB saved on disk
+35:C 19 Apr 2022 12:31:18.038 * RDB: 0 MB of memory used by copy-on-write
+1:M 19 Apr 2022 12:31:18.124 * Background saving terminated with success
+1:M 19 Apr 2022 12:46:19.105 * 1 changes in 900 seconds. Saving...
+1:M 19 Apr 2022 12:46:19.121 * Background saving started by pid 36
+36:C 19 Apr 2022 12:46:19.146 * DB saved on disk
+36:C 19 Apr 2022 12:46:19.150 * RDB: 0 MB of memory used by copy-on-write
+1:M 19 Apr 2022 12:46:19.228 * Background saving terminated with success
+1:M 20 Apr 2022 06:42:07.450 * 1 changes in 900 seconds. Saving...
+1:M 20 Apr 2022 06:42:07.457 * Background saving started by pid 37
+37:C 20 Apr 2022 06:42:07.490 * DB saved on disk
+37:C 20 Apr 2022 06:42:07.495 * RDB: 0 MB of memory used by copy-on-write
+1:M 20 Apr 2022 06:42:07.593 * Background saving terminated with success
+1:M 20 Apr 2022 06:57:08.106 * 1 changes in 900 seconds. Saving...
+1:M 20 Apr 2022 06:57:08.111 * Background saving started by pid 38
+38:C 20 Apr 2022 06:57:08.128 * DB saved on disk
+38:C 20 Apr 2022 06:57:08.131 * RDB: 0 MB of memory used by copy-on-write
+1:M 20 Apr 2022 06:57:08.217 * Background saving terminated with success
+1:M 20 Apr 2022 07:17:00.258 * 1 changes in 900 seconds. Saving...
+1:M 20 Apr 2022 07:17:00.263 * Background saving started by pid 39
+39:C 20 Apr 2022 07:17:00.277 * DB saved on disk
+39:C 20 Apr 2022 07:17:00.283 * RDB: 0 MB of memory used by copy-on-write
+1:M 20 Apr 2022 07:17:00.367 * Background saving terminated with success
+1:M 20 Apr 2022 07:22:01.063 * 10 changes in 300 seconds. Saving...
+1:M 20 Apr 2022 07:22:01.094 * Background saving started by pid 40
+40:C 20 Apr 2022 07:22:01.160 * DB saved on disk
+40:C 20 Apr 2022 07:22:01.178 * RDB: 0 MB of memory used by copy-on-write
+1:M 20 Apr 2022 07:22:01.235 * Background saving terminated with success
+1:M 20 Apr 2022 07:37:02.022 * 1 changes in 900 seconds. Saving...
+1:M 20 Apr 2022 07:37:02.031 * Background saving started by pid 41
+41:C 20 Apr 2022 07:37:02.046 * DB saved on disk
+41:C 20 Apr 2022 07:37:02.049 * RDB: 0 MB of memory used by copy-on-write
+1:M 20 Apr 2022 07:37:02.137 * Background saving terminated with success
+1:M 20 Apr 2022 08:06:37.028 * 1 changes in 900 seconds. Saving...
+1:M 20 Apr 2022 08:06:37.080 * Background saving started by pid 42
+42:C 20 Apr 2022 08:06:37.194 * DB saved on disk
+42:C 20 Apr 2022 08:06:37.205 * RDB: 0 MB of memory used by copy-on-write
+1:M 20 Apr 2022 08:06:37.294 * Background saving terminated with success
+1:M 20 Apr 2022 08:21:38.097 * 1 changes in 900 seconds. Saving...
+1:M 20 Apr 2022 08:21:38.102 * Background saving started by pid 43
+43:C 20 Apr 2022 08:21:38.113 * DB saved on disk
+43:C 20 Apr 2022 08:21:38.116 * RDB: 0 MB of memory used by copy-on-write
+1:M 20 Apr 2022 08:21:38.211 * Background saving terminated with success
+1:M 20 Apr 2022 09:15:02.205 * 1 changes in 900 seconds. Saving...
+1:M 20 Apr 2022 09:15:02.220 * Background saving started by pid 44
+44:C 20 Apr 2022 09:15:02.282 * DB saved on disk
+44:C 20 Apr 2022 09:15:02.286 * RDB: 0 MB of memory used by copy-on-write
+1:M 20 Apr 2022 09:15:02.329 * Background saving terminated with success
+1:M 20 Apr 2022 09:30:03.016 * 1 changes in 900 seconds. Saving...
+1:M 20 Apr 2022 09:30:03.021 * Background saving started by pid 45
+45:C 20 Apr 2022 09:30:03.030 * DB saved on disk
+45:C 20 Apr 2022 09:30:03.033 * RDB: 0 MB of memory used by copy-on-write
+1:M 20 Apr 2022 09:30:03.157 * Background saving terminated with success
+1:signal-handler (1650522503) Received SIGTERM scheduling shutdown...
+1:M 21 Apr 2022 06:28:23.623 # User requested shutdown...
+1:M 21 Apr 2022 06:28:23.655 * Calling fsync() on the AOF file.
+1:M 21 Apr 2022 06:28:23.658 * Saving the final RDB snapshot before exiting.
+1:M 21 Apr 2022 06:28:23.694 * DB saved on disk
+1:M 21 Apr 2022 06:28:23.698 * Removing the pid file.
+1:M 21 Apr 2022 06:28:23.715 # Redis is now ready to exit, bye bye...
+1:C 21 Apr 2022 06:35:36.460 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 21 Apr 2022 06:35:36.467 # Redis version=5.0.12, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 21 Apr 2022 06:35:36.473 # Configuration loaded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.12 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 21 Apr 2022 06:35:36.507 # Server initialized
+1:M 21 Apr 2022 06:35:36.511 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 21 Apr 2022 06:35:36.766 * DB loaded from append only file: 0.249 seconds
+1:M 21 Apr 2022 06:35:36.773 * Ready to accept connections
+1:M 21 Apr 2022 06:36:37.013 * 10000 changes in 60 seconds. Saving...
+1:M 21 Apr 2022 06:36:37.020 * Background saving started by pid 18
+18:C 21 Apr 2022 06:36:37.033 * DB saved on disk
+18:C 21 Apr 2022 06:36:37.041 * RDB: 0 MB of memory used by copy-on-write
+1:M 21 Apr 2022 06:36:37.128 * Background saving terminated with success
+1:M 21 Apr 2022 06:57:13.930 * 1 changes in 900 seconds. Saving...
+1:M 21 Apr 2022 06:57:13.974 * Background saving started by pid 19
+19:C 21 Apr 2022 06:57:14.001 * DB saved on disk
+19:C 21 Apr 2022 06:57:14.019 * RDB: 0 MB of memory used by copy-on-write
+1:M 21 Apr 2022 06:57:14.088 * Background saving terminated with success
+1:M 21 Apr 2022 07:09:23.143 * 10 changes in 300 seconds. Saving...
+1:M 21 Apr 2022 07:09:23.154 * Background saving started by pid 20
+20:C 21 Apr 2022 07:09:23.188 * DB saved on disk
+20:C 21 Apr 2022 07:09:23.194 * RDB: 0 MB of memory used by copy-on-write
+1:M 21 Apr 2022 07:09:23.261 * Background saving terminated with success
+1:M 21 Apr 2022 07:24:24.043 * 1 changes in 900 seconds. Saving...
+1:M 21 Apr 2022 07:24:24.049 * Background saving started by pid 21
+21:C 21 Apr 2022 07:24:24.062 * DB saved on disk
+21:C 21 Apr 2022 07:24:24.065 * RDB: 0 MB of memory used by copy-on-write
+1:M 21 Apr 2022 07:24:24.158 * Background saving terminated with success
+1:M 21 Apr 2022 08:04:26.460 * 1 changes in 900 seconds. Saving...
+1:M 21 Apr 2022 08:04:26.465 * Background saving started by pid 22
+22:C 21 Apr 2022 08:04:26.525 * DB saved on disk
+22:C 21 Apr 2022 08:04:26.532 * RDB: 0 MB of memory used by copy-on-write
+1:M 21 Apr 2022 08:04:26.572 * Background saving terminated with success
+1:M 21 Apr 2022 08:19:27.087 * 1 changes in 900 seconds. Saving...
+1:M 21 Apr 2022 08:19:27.113 * Background saving started by pid 23
+23:C 21 Apr 2022 08:19:27.141 * DB saved on disk
+23:C 21 Apr 2022 08:19:27.146 * RDB: 0 MB of memory used by copy-on-write
+1:M 21 Apr 2022 08:19:27.219 * Background saving terminated with success
+1:M 21 Apr 2022 08:34:28.037 * 1 changes in 900 seconds. Saving...
+1:M 21 Apr 2022 08:34:28.041 * Background saving started by pid 24
+24:C 21 Apr 2022 08:34:28.059 * DB saved on disk
+24:C 21 Apr 2022 08:34:28.064 * RDB: 0 MB of memory used by copy-on-write
+1:M 21 Apr 2022 08:34:28.145 * Background saving terminated with success
+1:M 21 Apr 2022 08:49:29.054 * 1 changes in 900 seconds. Saving...
+1:M 21 Apr 2022 08:49:29.060 * Background saving started by pid 25
+25:C 21 Apr 2022 08:49:29.074 * DB saved on disk
+25:C 21 Apr 2022 08:49:29.077 * RDB: 0 MB of memory used by copy-on-write
+1:M 21 Apr 2022 08:49:29.164 * Background saving terminated with success
+1:M 21 Apr 2022 09:13:48.220 * 1 changes in 900 seconds. Saving...
+1:M 21 Apr 2022 09:13:48.230 * Background saving started by pid 26
+26:C 21 Apr 2022 09:13:48.260 * DB saved on disk
+26:C 21 Apr 2022 09:13:48.267 * RDB: 0 MB of memory used by copy-on-write
+1:M 21 Apr 2022 09:13:48.358 * Background saving terminated with success
+1:M 21 Apr 2022 09:28:49.024 * 1 changes in 900 seconds. Saving...
+1:M 21 Apr 2022 09:28:49.029 * Background saving started by pid 27
+27:C 21 Apr 2022 09:28:49.041 * DB saved on disk
+27:C 21 Apr 2022 09:28:49.045 * RDB: 0 MB of memory used by copy-on-write
+1:M 21 Apr 2022 09:28:49.138 * Background saving terminated with success
+1:M 21 Apr 2022 16:07:52.796 * 1 changes in 900 seconds. Saving...
+1:M 21 Apr 2022 16:07:52.812 * Background saving started by pid 28
+28:C 21 Apr 2022 16:07:52.870 * DB saved on disk
+28:C 21 Apr 2022 16:07:52.878 * RDB: 0 MB of memory used by copy-on-write
+1:M 21 Apr 2022 16:07:52.919 * Background saving terminated with success
+1:M 21 Apr 2022 16:22:53.058 * 1 changes in 900 seconds. Saving...
+1:M 21 Apr 2022 16:22:53.063 * Background saving started by pid 29
+29:C 21 Apr 2022 16:22:53.079 * DB saved on disk
+29:C 21 Apr 2022 16:22:53.082 * RDB: 0 MB of memory used by copy-on-write
+1:M 21 Apr 2022 16:22:53.175 * Background saving terminated with success
+1:C 26 Apr 2022 04:53:22.809 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 26 Apr 2022 04:53:22.811 # Redis version=5.0.12, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 26 Apr 2022 04:53:22.815 # Configuration loaded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.12 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 26 Apr 2022 04:53:22.831 # Server initialized
+1:M 26 Apr 2022 04:53:22.834 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 26 Apr 2022 04:53:22.907 * DB loaded from append only file: 0.069 seconds
+1:M 26 Apr 2022 04:53:22.910 * Ready to accept connections
+1:M 26 Apr 2022 04:54:23.066 * 10000 changes in 60 seconds. Saving...
+1:M 26 Apr 2022 04:54:23.230 * Background saving started by pid 19
+19:C 26 Apr 2022 04:54:23.466 * DB saved on disk
+19:C 26 Apr 2022 04:54:23.475 * RDB: 0 MB of memory used by copy-on-write
+1:M 26 Apr 2022 04:54:23.490 * Background saving terminated with success
+1:M 28 Apr 2022 04:48:30.645 * 1 changes in 900 seconds. Saving...
+1:M 28 Apr 2022 04:48:30.683 * Background saving started by pid 28
+28:C 28 Apr 2022 04:48:30.837 * DB saved on disk
+28:C 28 Apr 2022 04:48:30.855 * RDB: 0 MB of memory used by copy-on-write
+1:M 28 Apr 2022 04:48:30.924 * Background saving terminated with success
+1:M 28 Apr 2022 05:03:31.014 * 1 changes in 900 seconds. Saving...
+1:M 28 Apr 2022 05:03:31.018 * Background saving started by pid 29
+29:C 28 Apr 2022 05:03:31.031 * DB saved on disk
+29:C 28 Apr 2022 05:03:31.034 * RDB: 0 MB of memory used by copy-on-write
+1:M 28 Apr 2022 05:03:31.122 * Background saving terminated with success
+1:M 28 Apr 2022 05:36:45.431 * 1 changes in 900 seconds. Saving...
+1:M 28 Apr 2022 05:36:45.446 * Background saving started by pid 30
+30:C 28 Apr 2022 05:36:45.485 * DB saved on disk
+30:C 28 Apr 2022 05:36:45.491 * RDB: 0 MB of memory used by copy-on-write
+1:M 28 Apr 2022 05:36:45.553 * Background saving terminated with success
+1:M 28 Apr 2022 05:51:46.078 * 1 changes in 900 seconds. Saving...
+1:M 28 Apr 2022 05:51:46.083 * Background saving started by pid 31
+31:C 28 Apr 2022 05:51:46.093 * DB saved on disk
+31:C 28 Apr 2022 05:51:46.096 * RDB: 0 MB of memory used by copy-on-write
+1:M 28 Apr 2022 05:51:46.191 * Background saving terminated with success
+1:M 28 Apr 2022 06:06:47.005 * 1 changes in 900 seconds. Saving...
+1:M 28 Apr 2022 06:06:47.010 * Background saving started by pid 32
+32:C 28 Apr 2022 06:06:47.022 * DB saved on disk
+32:C 28 Apr 2022 06:06:47.025 * RDB: 0 MB of memory used by copy-on-write
+1:M 28 Apr 2022 06:06:47.119 * Background saving terminated with success
+1:signal-handler (1651738111) Received SIGTERM scheduling shutdown...
+1:M 05 May 2022 08:08:31.813 # User requested shutdown...
+1:M 05 May 2022 08:08:31.817 * Calling fsync() on the AOF file.
+1:M 05 May 2022 08:08:31.821 * Saving the final RDB snapshot before exiting.
+1:M 05 May 2022 08:08:31.846 * DB saved on disk
+1:M 05 May 2022 08:08:31.849 * Removing the pid file.
+1:M 05 May 2022 08:08:31.860 # Redis is now ready to exit, bye bye...
+1:C 06 May 2022 08:35:36.301 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 06 May 2022 08:35:36.307 # Redis version=5.0.12, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 06 May 2022 08:35:36.311 # Configuration loaded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.12 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 06 May 2022 08:35:36.339 # Server initialized
+1:M 06 May 2022 08:35:36.343 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 06 May 2022 08:35:36.419 * DB loaded from append only file: 0.072 seconds
+1:M 06 May 2022 08:35:36.465 * Ready to accept connections
+1:M 06 May 2022 08:36:37.063 * 10000 changes in 60 seconds. Saving...
+1:M 06 May 2022 08:36:37.068 * Background saving started by pid 21
+21:C 06 May 2022 08:36:37.147 * DB saved on disk
+21:C 06 May 2022 08:36:37.153 * RDB: 0 MB of memory used by copy-on-write
+1:M 06 May 2022 08:36:37.173 * Background saving terminated with success
+1:M 07 May 2022 08:46:39.960 * 1 changes in 900 seconds. Saving...
+1:M 07 May 2022 08:46:40.017 * Background saving started by pid 22
+22:C 07 May 2022 08:46:40.070 * DB saved on disk
+22:C 07 May 2022 08:46:40.079 * RDB: 0 MB of memory used by copy-on-write
+1:M 07 May 2022 08:46:40.122 * Background saving terminated with success
+1:M 07 May 2022 08:51:41.036 * 10 changes in 300 seconds. Saving...
+1:M 07 May 2022 08:51:41.054 * Background saving started by pid 23
+23:C 07 May 2022 08:51:41.067 * DB saved on disk
+23:C 07 May 2022 08:51:41.074 * RDB: 0 MB of memory used by copy-on-write
+1:M 07 May 2022 08:51:41.162 * Background saving terminated with success
+1:M 07 May 2022 08:56:57.311 * 10 changes in 300 seconds. Saving...
+1:M 07 May 2022 08:56:57.316 * Background saving started by pid 24
+24:C 07 May 2022 08:56:57.344 * DB saved on disk
+24:C 07 May 2022 08:56:57.352 * RDB: 0 MB of memory used by copy-on-write
+1:M 07 May 2022 08:56:57.425 * Background saving terminated with success
+1:M 07 May 2022 09:01:58.047 * 10 changes in 300 seconds. Saving...
+1:M 07 May 2022 09:01:58.050 * Background saving started by pid 25
+25:C 07 May 2022 09:01:58.069 * DB saved on disk
+25:C 07 May 2022 09:01:58.074 * RDB: 0 MB of memory used by copy-on-write
+1:M 07 May 2022 09:01:58.155 * Background saving terminated with success
+1:M 07 May 2022 09:06:59.065 * 10 changes in 300 seconds. Saving...
+1:M 07 May 2022 09:06:59.071 * Background saving started by pid 26
+26:C 07 May 2022 09:06:59.507 * DB saved on disk
+26:C 07 May 2022 09:06:59.513 * RDB: 0 MB of memory used by copy-on-write
+1:M 07 May 2022 09:06:59.581 * Background saving terminated with success
+1:M 07 May 2022 09:14:59.868 * 10 changes in 300 seconds. Saving...
+1:M 07 May 2022 09:14:59.872 * Background saving started by pid 27
+27:C 07 May 2022 09:14:59.902 * DB saved on disk
+27:C 07 May 2022 09:14:59.908 * RDB: 0 MB of memory used by copy-on-write
+1:M 07 May 2022 09:14:59.976 * Background saving terminated with success
+1:M 07 May 2022 09:16:00.037 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 09:16:00.042 * Background saving started by pid 28
+28:C 07 May 2022 09:16:03.184 * DB saved on disk
+28:C 07 May 2022 09:16:03.192 * RDB: 0 MB of memory used by copy-on-write
+1:M 07 May 2022 09:16:03.259 * Background saving terminated with success
+1:M 07 May 2022 09:17:04.021 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 09:17:04.028 * Background saving started by pid 29
+29:C 07 May 2022 09:17:09.042 * DB saved on disk
+29:C 07 May 2022 09:17:09.052 * RDB: 1 MB of memory used by copy-on-write
+1:M 07 May 2022 09:17:09.074 * Background saving terminated with success
+1:M 07 May 2022 09:18:10.040 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 09:18:10.048 * Background saving started by pid 30
+30:C 07 May 2022 09:18:15.982 * DB saved on disk
+30:C 07 May 2022 09:18:15.994 * RDB: 0 MB of memory used by copy-on-write
+1:M 07 May 2022 09:18:16.109 * Background saving terminated with success
+1:M 07 May 2022 09:19:17.053 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 09:19:17.059 * Background saving started by pid 31
+31:C 07 May 2022 09:19:27.726 * DB saved on disk
+31:C 07 May 2022 09:19:27.735 * RDB: 2 MB of memory used by copy-on-write
+1:M 07 May 2022 09:19:27.766 * Background saving terminated with success
+1:M 07 May 2022 09:20:28.025 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 09:20:28.033 * Background saving started by pid 32
+32:C 07 May 2022 09:20:41.697 * DB saved on disk
+32:C 07 May 2022 09:20:41.708 * RDB: 2 MB of memory used by copy-on-write
+1:M 07 May 2022 09:20:41.807 * Background saving terminated with success
+1:M 07 May 2022 09:21:42.080 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 09:21:42.086 * Background saving started by pid 33
+33:C 07 May 2022 09:21:58.459 * DB saved on disk
+33:C 07 May 2022 09:21:58.483 * RDB: 1 MB of memory used by copy-on-write
+1:M 07 May 2022 09:21:58.519 * Background saving terminated with success
+1:M 07 May 2022 09:22:59.081 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 09:22:59.091 * Background saving started by pid 34
+34:C 07 May 2022 09:23:19.720 * DB saved on disk
+34:C 07 May 2022 09:23:19.749 * RDB: 3 MB of memory used by copy-on-write
+1:M 07 May 2022 09:23:19.837 * Background saving terminated with success
+1:M 07 May 2022 09:24:20.068 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 09:24:20.075 * Background saving started by pid 35
+35:C 07 May 2022 09:24:46.071 * DB saved on disk
+35:C 07 May 2022 09:24:46.125 * RDB: 2 MB of memory used by copy-on-write
+1:M 07 May 2022 09:24:46.226 * Background saving terminated with success
+1:M 07 May 2022 09:25:21.007 * Starting automatic rewriting of AOF on 6302% growth
+1:M 07 May 2022 09:25:21.015 * Background append only file rewriting started by pid 36
+1:M 07 May 2022 09:25:51.686 * AOF rewrite child asks to stop sending diffs.
+36:C 07 May 2022 09:25:51.691 * Parent agreed to stop sending diffs. Finalizing AOF...
+36:C 07 May 2022 09:25:51.696 * Concatenating 2.52 MB of AOF diff received from parent.
+36:C 07 May 2022 09:25:51.892 * SYNC append only file rewrite performed
+36:C 07 May 2022 09:25:51.916 * AOF rewrite: 4 MB of memory used by copy-on-write
+1:M 07 May 2022 09:25:52.017 * Background AOF rewrite terminated with success
+1:M 07 May 2022 09:25:52.026 * Residual parent diff successfully flushed to the rewritten AOF (0.02 MB)
+1:M 07 May 2022 09:25:52.204 * Background AOF rewrite finished successfully
+1:M 07 May 2022 09:25:52.317 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 09:25:52.334 * Background saving started by pid 37
+37:C 07 May 2022 09:26:28.625 * DB saved on disk
+37:C 07 May 2022 09:26:28.654 * RDB: 4 MB of memory used by copy-on-write
+1:M 07 May 2022 09:26:28.697 * Background saving terminated with success
+1:M 07 May 2022 09:27:29.087 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 09:27:29.100 * Background saving started by pid 38
+38:C 07 May 2022 09:28:14.913 * DB saved on disk
+38:C 07 May 2022 09:28:14.926 * RDB: 8 MB of memory used by copy-on-write
+1:M 07 May 2022 09:28:14.963 * Background saving terminated with success
+1:M 07 May 2022 09:29:15.107 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 09:29:15.119 * Background saving started by pid 39
+39:C 07 May 2022 09:30:16.026 * DB saved on disk
+39:C 07 May 2022 09:30:16.043 * RDB: 9 MB of memory used by copy-on-write
+1:M 07 May 2022 09:30:16.150 * Background saving terminated with success
+1:M 07 May 2022 09:31:17.026 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 09:31:17.034 * Background saving started by pid 40
+40:C 07 May 2022 09:32:25.130 * DB saved on disk
+40:C 07 May 2022 09:32:25.217 * RDB: 4 MB of memory used by copy-on-write
+1:M 07 May 2022 09:32:25.362 * Background saving terminated with success
+1:M 07 May 2022 09:33:26.043 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 09:33:26.065 * Background saving started by pid 41
+41:C 07 May 2022 09:34:33.494 * DB saved on disk
+41:C 07 May 2022 09:34:33.509 * RDB: 5 MB of memory used by copy-on-write
+1:M 07 May 2022 09:34:33.565 * Background saving terminated with success
+1:M 07 May 2022 09:34:45.546 * Starting automatic rewriting of AOF on 100% growth
+1:M 07 May 2022 09:34:45.558 * Background append only file rewriting started by pid 42
+1:M 07 May 2022 09:35:54.629 * AOF rewrite child asks to stop sending diffs.
+42:C 07 May 2022 09:35:54.633 * Parent agreed to stop sending diffs. Finalizing AOF...
+42:C 07 May 2022 09:35:54.640 * Concatenating 5.11 MB of AOF diff received from parent.
+42:C 07 May 2022 09:35:54.966 * SYNC append only file rewrite performed
+42:C 07 May 2022 09:35:55.002 * AOF rewrite: 10 MB of memory used by copy-on-write
+1:M 07 May 2022 09:35:55.152 * Background AOF rewrite terminated with success
+1:M 07 May 2022 09:35:55.180 * Residual parent diff successfully flushed to the rewritten AOF (0.02 MB)
+1:M 07 May 2022 09:35:55.246 * Background AOF rewrite finished successfully
+1:M 07 May 2022 09:35:55.383 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 09:35:55.412 * Background saving started by pid 43
+43:C 07 May 2022 09:37:13.348 * DB saved on disk
+43:C 07 May 2022 09:37:13.374 * RDB: 5 MB of memory used by copy-on-write
+1:M 07 May 2022 09:37:13.413 * Background saving terminated with success
+1:M 07 May 2022 09:38:14.027 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 09:38:14.044 * Background saving started by pid 44
+44:C 07 May 2022 09:39:41.887 * DB saved on disk
+44:C 07 May 2022 09:39:41.919 * RDB: 5 MB of memory used by copy-on-write
+1:M 07 May 2022 09:39:42.067 * Background saving terminated with success
+1:M 07 May 2022 09:40:43.052 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 09:40:43.086 * Background saving started by pid 45
+45:C 07 May 2022 09:42:43.648 * DB saved on disk
+45:C 07 May 2022 09:42:43.779 * RDB: 5 MB of memory used by copy-on-write
+1:M 07 May 2022 09:42:43.923 * Background saving terminated with success
+1:M 07 May 2022 09:43:44.087 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 09:43:44.115 * Background saving started by pid 46
+46:C 07 May 2022 09:45:31.843 * DB saved on disk
+46:C 07 May 2022 09:45:31.862 * RDB: 9 MB of memory used by copy-on-write
+1:M 07 May 2022 09:45:31.923 * Background saving terminated with success
+1:M 07 May 2022 09:46:32.099 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 09:46:32.113 * Background saving started by pid 47
+47:C 07 May 2022 09:46:33.360 * DB saved on disk
+47:C 07 May 2022 09:46:33.371 * RDB: 0 MB of memory used by copy-on-write
+1:M 07 May 2022 09:46:33.454 * Background saving terminated with success
+1:M 07 May 2022 09:47:34.020 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 09:47:34.000 * Background saving started by pid 48
+48:C 07 May 2022 09:47:39.205 * DB saved on disk
+48:C 07 May 2022 09:47:39.213 * RDB: 1 MB of memory used by copy-on-write
+1:M 07 May 2022 09:47:39.315 * Background saving terminated with success
+1:M 07 May 2022 09:48:40.020 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 09:48:40.028 * Background saving started by pid 49
+49:C 07 May 2022 09:48:46.080 * DB saved on disk
+49:C 07 May 2022 09:48:46.089 * RDB: 2 MB of memory used by copy-on-write
+1:M 07 May 2022 09:48:46.187 * Background saving terminated with success
+1:M 07 May 2022 09:49:47.046 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 09:49:47.052 * Background saving started by pid 50
+50:C 07 May 2022 09:49:56.230 * DB saved on disk
+50:C 07 May 2022 09:49:56.252 * RDB: 2 MB of memory used by copy-on-write
+1:M 07 May 2022 09:49:56.323 * Background saving terminated with success
+1:M 07 May 2022 09:50:57.017 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 09:50:57.025 * Background saving started by pid 51
+51:C 07 May 2022 09:51:11.821 * DB saved on disk
+51:C 07 May 2022 09:51:11.871 * RDB: 4 MB of memory used by copy-on-write
+1:M 07 May 2022 09:51:11.965 * Background saving terminated with success
+1:M 07 May 2022 09:52:12.004 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 09:52:12.011 * Background saving started by pid 52
+52:C 07 May 2022 09:52:27.656 * DB saved on disk
+52:C 07 May 2022 09:52:27.668 * RDB: 4 MB of memory used by copy-on-write
+1:M 07 May 2022 09:52:27.764 * Background saving terminated with success
+1:M 07 May 2022 09:52:27.868 * Starting automatic rewriting of AOF on 101% growth
+1:M 07 May 2022 09:52:27.875 * Background append only file rewriting started by pid 53
+1:M 07 May 2022 09:52:45.548 * AOF rewrite child asks to stop sending diffs.
+53:C 07 May 2022 09:52:45.553 * Parent agreed to stop sending diffs. Finalizing AOF...
+53:C 07 May 2022 09:52:45.564 * Concatenating 1.41 MB of AOF diff received from parent.
+53:C 07 May 2022 09:52:45.689 * SYNC append only file rewrite performed
+53:C 07 May 2022 09:52:45.700 * AOF rewrite: 5 MB of memory used by copy-on-write
+1:M 07 May 2022 09:52:45.778 * Background AOF rewrite terminated with success
+1:M 07 May 2022 09:52:45.789 * Residual parent diff successfully flushed to the rewritten AOF (0.01 MB)
+1:M 07 May 2022 09:52:45.806 * Background AOF rewrite finished successfully
+1:M 07 May 2022 09:53:28.052 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 09:53:28.061 * Background saving started by pid 54
+54:C 07 May 2022 09:53:36.635 * DB saved on disk
+54:C 07 May 2022 09:53:36.642 * RDB: 0 MB of memory used by copy-on-write
+1:M 07 May 2022 09:53:36.729 * Background saving terminated with success
+1:M 07 May 2022 10:42:42.371 * 1 changes in 900 seconds. Saving...
+1:M 07 May 2022 10:42:42.391 * Background saving started by pid 55
+55:C 07 May 2022 10:42:52.565 * DB saved on disk
+55:C 07 May 2022 10:42:52.571 * RDB: 0 MB of memory used by copy-on-write
+1:M 07 May 2022 10:42:52.604 * Background saving terminated with success
+1:M 07 May 2022 10:57:51.845 * 10 changes in 300 seconds. Saving...
+1:M 07 May 2022 10:57:51.860 * Background saving started by pid 56
+56:C 07 May 2022 10:58:01.836 * DB saved on disk
+56:C 07 May 2022 10:58:01.842 * RDB: 0 MB of memory used by copy-on-write
+1:M 07 May 2022 10:58:01.874 * Background saving terminated with success
+1:M 07 May 2022 11:14:41.380 * 1 changes in 900 seconds. Saving...
+1:M 07 May 2022 11:14:41.455 * Background saving started by pid 57
+57:C 07 May 2022 11:14:53.342 * DB saved on disk
+57:C 07 May 2022 11:14:53.348 * RDB: 0 MB of memory used by copy-on-write
+1:M 07 May 2022 11:14:53.455 * Background saving terminated with success
+1:M 07 May 2022 15:19:11.655 * 1 changes in 900 seconds. Saving...
+1:M 07 May 2022 15:19:11.719 * Background saving started by pid 58
+58:C 07 May 2022 15:19:23.412 * DB saved on disk
+58:C 07 May 2022 15:19:23.423 * RDB: 0 MB of memory used by copy-on-write
+1:M 07 May 2022 15:19:23.526 * Background saving terminated with success
+1:M 07 May 2022 15:34:24.006 * 1 changes in 900 seconds. Saving...
+1:M 07 May 2022 15:34:24.015 * Background saving started by pid 59
+59:C 07 May 2022 15:34:33.124 * DB saved on disk
+59:C 07 May 2022 15:34:33.131 * RDB: 0 MB of memory used by copy-on-write
+1:M 07 May 2022 15:34:33.179 * Background saving terminated with success
+1:M 07 May 2022 16:41:36.934 * 1 changes in 900 seconds. Saving...
+1:M 07 May 2022 16:41:36.978 * Background saving started by pid 60
+60:C 07 May 2022 16:41:46.883 * DB saved on disk
+60:C 07 May 2022 16:41:46.889 * RDB: 1 MB of memory used by copy-on-write
+1:M 07 May 2022 16:41:46.978 * Background saving terminated with success
+1:M 07 May 2022 16:56:47.099 * 1 changes in 900 seconds. Saving...
+1:M 07 May 2022 16:56:47.115 * Background saving started by pid 61
+61:C 07 May 2022 16:56:56.275 * DB saved on disk
+61:C 07 May 2022 16:56:56.285 * RDB: 0 MB of memory used by copy-on-write
+1:M 07 May 2022 16:56:56.392 * Background saving terminated with success
+1:M 07 May 2022 17:11:45.152 * 10 changes in 300 seconds. Saving...
+1:M 07 May 2022 17:11:45.181 * Background saving started by pid 62
+62:C 07 May 2022 17:11:45.233 * DB saved on disk
+62:C 07 May 2022 17:11:45.243 * RDB: 0 MB of memory used by copy-on-write
+1:M 07 May 2022 17:11:45.285 * Background saving terminated with success
+1:M 07 May 2022 17:12:46.048 * 10000 changes in 60 seconds. Saving...
+1:M 07 May 2022 17:12:46.055 * Background saving started by pid 63
+63:C 07 May 2022 17:12:46.801 * DB saved on disk
+63:C 07 May 2022 17:12:46.805 * RDB: 0 MB of memory used by copy-on-write
+1:M 07 May 2022 17:12:46.863 * Background saving terminated with success
+1:C 09 May 2022 02:42:39.394 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 09 May 2022 02:42:39.398 # Redis version=5.0.12, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 09 May 2022 02:42:39.403 # Configuration loaded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.12 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 09 May 2022 02:42:39.421 # Server initialized
+1:M 09 May 2022 02:42:39.426 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 09 May 2022 02:42:39.435 * Reading RDB preamble from AOF file...
+1:M 09 May 2022 02:42:40.237 * Reading the remaining AOF tail...
+1:M 09 May 2022 02:42:40.763 * DB loaded from append only file: 1.327 seconds
+1:M 09 May 2022 02:42:40.770 * Ready to accept connections
+1:M 09 May 2022 02:43:40.082 * 10000 changes in 60 seconds. Saving...
+1:M 09 May 2022 02:43:40.089 * Background saving started by pid 19
+19:C 09 May 2022 02:43:40.812 * DB saved on disk
+19:C 09 May 2022 02:43:40.819 * RDB: 0 MB of memory used by copy-on-write
+1:M 09 May 2022 02:43:40.897 * Background saving terminated with success
+1:M 09 May 2022 03:05:41.155 * 1 changes in 900 seconds. Saving...
+1:M 09 May 2022 03:05:41.171 * Background saving started by pid 20
+20:C 09 May 2022 03:05:42.832 * DB saved on disk
+20:C 09 May 2022 03:05:42.841 * RDB: 3 MB of memory used by copy-on-write
+1:M 09 May 2022 03:05:42.918 * Background saving terminated with success
+1:M 09 May 2022 03:10:43.063 * 10 changes in 300 seconds. Saving...
+1:M 09 May 2022 03:10:43.073 * Background saving started by pid 21
+21:C 09 May 2022 03:10:43.155 * DB saved on disk
+21:C 09 May 2022 03:10:43.159 * RDB: 0 MB of memory used by copy-on-write
+1:M 09 May 2022 03:10:43.178 * Background saving terminated with success
+1:M 09 May 2022 07:34:41.588 * 1 changes in 900 seconds. Saving...
+1:M 09 May 2022 07:34:41.608 * Background saving started by pid 22
+22:C 09 May 2022 07:34:41.864 * DB saved on disk
+22:C 09 May 2022 07:34:41.868 * RDB: 0 MB of memory used by copy-on-write
+1:M 09 May 2022 07:34:41.919 * Background saving terminated with success
+1:M 09 May 2022 08:45:23.801 * 1 changes in 900 seconds. Saving...
+1:M 09 May 2022 08:45:23.809 * Background saving started by pid 23
+23:C 09 May 2022 08:45:24.015 * DB saved on disk
+23:C 09 May 2022 08:45:24.037 * RDB: 1 MB of memory used by copy-on-write
+1:M 09 May 2022 08:45:24.126 * Background saving terminated with success
+1:M 09 May 2022 08:50:25.092 * 10 changes in 300 seconds. Saving...
+1:M 09 May 2022 08:50:25.098 * Background saving started by pid 24
+24:C 09 May 2022 08:50:25.115 * DB saved on disk
+24:C 09 May 2022 08:50:25.119 * RDB: 0 MB of memory used by copy-on-write
+1:M 09 May 2022 08:50:25.205 * Background saving terminated with success
+1:M 09 May 2022 09:06:08.492 * 1 changes in 900 seconds. Saving...
+1:M 09 May 2022 09:06:08.501 * Background saving started by pid 25
+25:C 09 May 2022 09:06:08.550 * DB saved on disk
+25:C 09 May 2022 09:06:08.562 * RDB: 0 MB of memory used by copy-on-write
+1:M 09 May 2022 09:06:08.607 * Background saving terminated with success
+1:M 09 May 2022 09:21:09.074 * 1 changes in 900 seconds. Saving...
+1:M 09 May 2022 09:21:09.079 * Background saving started by pid 26
+26:C 09 May 2022 09:21:09.093 * DB saved on disk
+26:C 09 May 2022 09:21:09.096 * RDB: 0 MB of memory used by copy-on-write
+1:M 09 May 2022 09:21:09.185 * Background saving terminated with success
+1:M 09 May 2022 10:20:18.588 * 1 changes in 900 seconds. Saving...
+1:M 09 May 2022 10:20:18.598 * Background saving started by pid 27
+27:C 09 May 2022 10:20:18.648 * DB saved on disk
+27:C 09 May 2022 10:20:18.658 * RDB: 0 MB of memory used by copy-on-write
+1:M 09 May 2022 10:20:18.702 * Background saving terminated with success
+1:M 09 May 2022 10:24:05.149 * 10000 changes in 60 seconds. Saving...
+1:M 09 May 2022 10:24:05.154 * Background saving started by pid 28
+28:C 09 May 2022 10:24:06.215 * DB saved on disk
+28:C 09 May 2022 10:24:06.222 * RDB: 0 MB of memory used by copy-on-write
+1:M 09 May 2022 10:24:06.276 * Background saving terminated with success
+1:M 09 May 2022 10:29:07.081 * 10 changes in 300 seconds. Saving...
+1:M 09 May 2022 10:29:07.089 * Background saving started by pid 29
+29:C 09 May 2022 10:29:07.958 * DB saved on disk
+29:C 09 May 2022 10:29:07.963 * RDB: 0 MB of memory used by copy-on-write
+1:M 09 May 2022 10:29:08.010 * Background saving terminated with success
+1:M 09 May 2022 16:45:19.712 * 1 changes in 900 seconds. Saving...
+1:M 09 May 2022 16:45:19.724 * Background saving started by pid 30
+30:C 09 May 2022 16:45:21.840 * DB saved on disk
+30:C 09 May 2022 16:45:21.848 * RDB: 1 MB of memory used by copy-on-write
+1:M 09 May 2022 16:45:21.861 * Background saving terminated with success
+1:M 09 May 2022 16:50:22.013 * 10 changes in 300 seconds. Saving...
+1:M 09 May 2022 16:50:22.019 * Background saving started by pid 31
+31:C 09 May 2022 16:50:22.130 * DB saved on disk
+31:C 09 May 2022 16:50:22.134 * RDB: 0 MB of memory used by copy-on-write
+1:M 09 May 2022 16:50:22.225 * Background saving terminated with success
+1:M 10 May 2022 08:13:21.818 * 1 changes in 900 seconds. Saving...
+1:M 10 May 2022 08:13:21.901 * Background saving started by pid 32
+32:C 10 May 2022 08:13:22.297 * DB saved on disk
+32:C 10 May 2022 08:13:22.305 * RDB: 0 MB of memory used by copy-on-write
+1:M 10 May 2022 08:13:22.316 * Background saving terminated with success
+1:M 10 May 2022 08:18:23.055 * 10 changes in 300 seconds. Saving...
+1:M 10 May 2022 08:18:23.063 * Background saving started by pid 33
+33:C 10 May 2022 08:18:23.078 * DB saved on disk
+33:C 10 May 2022 08:18:23.082 * RDB: 0 MB of memory used by copy-on-write
+1:M 10 May 2022 08:18:23.170 * Background saving terminated with success
+1:M 10 May 2022 08:27:06.397 * 10 changes in 300 seconds. Saving...
+1:M 10 May 2022 08:27:06.416 * Background saving started by pid 34
+34:C 10 May 2022 08:27:06.449 * DB saved on disk
+34:C 10 May 2022 08:27:06.456 * RDB: 0 MB of memory used by copy-on-write
+1:M 10 May 2022 08:27:06.522 * Background saving terminated with success
+1:M 10 May 2022 08:32:07.106 * 10 changes in 300 seconds. Saving...
+1:M 10 May 2022 08:32:07.112 * Background saving started by pid 35
+35:C 10 May 2022 08:32:07.134 * DB saved on disk
+35:C 10 May 2022 08:32:07.139 * RDB: 0 MB of memory used by copy-on-write
+1:M 10 May 2022 08:32:07.217 * Background saving terminated with success
+1:M 10 May 2022 12:01:25.218 * 1 changes in 900 seconds. Saving...
+1:M 10 May 2022 12:01:25.273 * Background saving started by pid 36
+36:C 10 May 2022 12:01:25.341 * DB saved on disk
+36:C 10 May 2022 12:01:25.367 * RDB: 0 MB of memory used by copy-on-write
+1:M 10 May 2022 12:01:25.391 * Background saving terminated with success
+1:M 10 May 2022 12:06:26.091 * 10 changes in 300 seconds. Saving...
+1:M 10 May 2022 12:06:26.100 * Background saving started by pid 37
+37:C 10 May 2022 12:06:26.115 * DB saved on disk
+37:C 10 May 2022 12:06:26.119 * RDB: 0 MB of memory used by copy-on-write
+1:M 10 May 2022 12:06:26.206 * Background saving terminated with success
+1:M 10 May 2022 12:44:25.205 * 1 changes in 900 seconds. Saving...
+1:M 10 May 2022 12:44:25.242 * Background saving started by pid 38
+38:C 10 May 2022 12:44:25.264 * DB saved on disk
+38:C 10 May 2022 12:44:25.278 * RDB: 0 MB of memory used by copy-on-write
+1:M 10 May 2022 12:44:25.352 * Background saving terminated with success
+1:M 10 May 2022 12:49:26.031 * 10 changes in 300 seconds. Saving...
+1:M 10 May 2022 12:49:26.035 * Background saving started by pid 39
+39:C 10 May 2022 12:49:26.050 * DB saved on disk
+39:C 10 May 2022 12:49:26.053 * RDB: 0 MB of memory used by copy-on-write
+1:M 10 May 2022 12:49:26.140 * Background saving terminated with success
+1:M 10 May 2022 12:54:27.102 * 10 changes in 300 seconds. Saving...
+1:M 10 May 2022 12:54:27.109 * Background saving started by pid 40
+40:C 10 May 2022 12:54:27.129 * DB saved on disk
+40:C 10 May 2022 12:54:27.134 * RDB: 0 MB of memory used by copy-on-write
+1:M 10 May 2022 12:54:27.215 * Background saving terminated with success
+1:M 17 May 2022 08:39:09.303 * 1 changes in 900 seconds. Saving...
+1:M 17 May 2022 08:39:09.349 * Background saving started by pid 41
+41:C 17 May 2022 08:39:09.410 * DB saved on disk
+41:C 17 May 2022 08:39:09.423 * RDB: 0 MB of memory used by copy-on-write
+1:M 17 May 2022 08:39:09.455 * Background saving terminated with success
+1:M 17 May 2022 08:44:42.920 * 10 changes in 300 seconds. Saving...
+1:M 17 May 2022 08:44:42.935 * Background saving started by pid 42
+42:C 17 May 2022 08:44:42.981 * DB saved on disk
+42:C 17 May 2022 08:44:42.996 * RDB: 0 MB of memory used by copy-on-write
+1:M 17 May 2022 08:44:43.050 * Background saving terminated with success
+1:M 17 May 2022 08:49:44.101 * 10 changes in 300 seconds. Saving...
+1:M 17 May 2022 08:49:44.122 * Background saving started by pid 43
+43:C 17 May 2022 08:49:44.138 * DB saved on disk
+43:C 17 May 2022 08:49:44.143 * RDB: 0 MB of memory used by copy-on-write
+1:M 17 May 2022 08:49:44.231 * Background saving terminated with success
+1:M 17 May 2022 09:48:00.642 * 1 changes in 900 seconds. Saving...
+1:M 17 May 2022 09:48:00.653 * Background saving started by pid 44
+44:C 17 May 2022 09:48:00.693 * DB saved on disk
+44:C 17 May 2022 09:48:00.704 * RDB: 0 MB of memory used by copy-on-write
+1:M 17 May 2022 09:48:00.763 * Background saving terminated with success
+1:M 17 May 2022 09:53:01.038 * 10 changes in 300 seconds. Saving...
+1:M 17 May 2022 09:53:01.053 * Background saving started by pid 45
+45:C 17 May 2022 09:53:01.073 * DB saved on disk
+45:C 17 May 2022 09:53:01.079 * RDB: 0 MB of memory used by copy-on-write
+1:M 17 May 2022 09:53:01.159 * Background saving terminated with success
+1:M 17 May 2022 10:09:12.323 * 1 changes in 900 seconds. Saving...
+1:M 17 May 2022 10:09:12.377 * Background saving started by pid 46
+46:C 17 May 2022 10:09:12.538 * DB saved on disk
+46:C 17 May 2022 10:09:12.552 * RDB: 0 MB of memory used by copy-on-write
+1:M 17 May 2022 10:09:12.623 * Background saving terminated with success
+1:M 17 May 2022 10:24:13.103 * 1 changes in 900 seconds. Saving...
+1:M 17 May 2022 10:24:13.120 * Background saving started by pid 47
+47:C 17 May 2022 10:24:13.133 * DB saved on disk
+47:C 17 May 2022 10:24:13.139 * RDB: 0 MB of memory used by copy-on-write
+1:M 17 May 2022 10:24:13.226 * Background saving terminated with success
+1:C 17 May 2022 10:57:54.391 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 17 May 2022 10:57:54.400 # Redis version=5.0.12, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 17 May 2022 10:57:54.419 # Configuration loaded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.12 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 17 May 2022 10:57:54.470 # Server initialized
+1:M 17 May 2022 10:57:54.480 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 17 May 2022 10:57:54.514 * Reading RDB preamble from AOF file...
+1:M 17 May 2022 10:57:55.813 * Reading the remaining AOF tail...
+1:M 17 May 2022 10:57:57.842 * DB loaded from append only file: 3.346 seconds
+1:M 17 May 2022 10:57:57.845 * Ready to accept connections
+1:M 17 May 2022 10:58:55.043 * 10000 changes in 60 seconds. Saving...
+1:M 17 May 2022 10:58:55.083 * Background saving started by pid 20
+20:C 17 May 2022 10:58:55.130 * DB saved on disk
+20:C 17 May 2022 10:58:55.138 * RDB: 0 MB of memory used by copy-on-write
+1:M 17 May 2022 10:58:55.189 * Background saving terminated with success
+1:M 17 May 2022 11:22:35.246 * 1 changes in 900 seconds. Saving...
+1:M 17 May 2022 11:22:35.270 * Background saving started by pid 21
+21:C 17 May 2022 11:22:35.331 * DB saved on disk
+21:C 17 May 2022 11:22:35.350 * RDB: 0 MB of memory used by copy-on-write
+1:M 17 May 2022 11:22:35.392 * Background saving terminated with success
+1:M 17 May 2022 11:27:36.022 * 10 changes in 300 seconds. Saving...
+1:M 17 May 2022 11:27:36.031 * Background saving started by pid 22
+22:C 17 May 2022 11:27:36.053 * DB saved on disk
+22:C 17 May 2022 11:27:36.062 * RDB: 0 MB of memory used by copy-on-write
+1:M 17 May 2022 11:27:36.140 * Background saving terminated with success
+1:C 18 May 2022 14:15:51.535 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 18 May 2022 14:15:51.546 # Redis version=5.0.12, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 18 May 2022 14:15:51.549 # Configuration loaded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.12 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 18 May 2022 14:15:51.589 # Server initialized
+1:M 18 May 2022 14:15:51.591 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 18 May 2022 14:15:51.598 * Reading RDB preamble from AOF file...
+1:M 18 May 2022 14:15:53.427 * Reading the remaining AOF tail...
+1:M 18 May 2022 14:15:53.981 * DB loaded from append only file: 2.385 seconds
+1:M 18 May 2022 14:15:53.984 * Ready to accept connections
+1:M 18 May 2022 14:16:52.040 * 10000 changes in 60 seconds. Saving...
+1:M 18 May 2022 14:16:52.047 * Background saving started by pid 19
+19:C 18 May 2022 14:16:52.095 * DB saved on disk
+19:C 18 May 2022 14:16:52.099 * RDB: 0 MB of memory used by copy-on-write
+1:M 18 May 2022 14:16:52.153 * Background saving terminated with success
+1:M 18 May 2022 14:31:53.028 * 1 changes in 900 seconds. Saving...
+1:M 18 May 2022 14:31:53.040 * Background saving started by pid 20
+20:C 18 May 2022 14:31:53.051 * DB saved on disk
+20:C 18 May 2022 14:31:53.057 * RDB: 0 MB of memory used by copy-on-write
+1:M 18 May 2022 14:31:53.145 * Background saving terminated with success
+1:M 20 May 2022 06:43:05.476 * 1 changes in 900 seconds. Saving...
+1:M 20 May 2022 06:43:05.545 * Background saving started by pid 21
+21:C 20 May 2022 06:43:05.663 * DB saved on disk
+21:C 20 May 2022 06:43:05.677 * RDB: 0 MB of memory used by copy-on-write
+1:M 20 May 2022 06:43:05.762 * Background saving terminated with success
+1:M 20 May 2022 06:48:25.707 * 10 changes in 300 seconds. Saving...
+1:M 20 May 2022 06:48:25.724 * Background saving started by pid 22
+22:C 20 May 2022 06:48:25.740 * DB saved on disk
+22:C 20 May 2022 06:48:25.776 * RDB: 0 MB of memory used by copy-on-write
+1:M 20 May 2022 06:48:25.834 * Background saving terminated with success
+1:M 20 May 2022 06:53:26.080 * 10 changes in 300 seconds. Saving...
+1:M 20 May 2022 06:53:26.089 * Background saving started by pid 23
+23:C 20 May 2022 06:53:26.098 * DB saved on disk
+23:C 20 May 2022 06:53:26.102 * RDB: 0 MB of memory used by copy-on-write
+1:M 20 May 2022 06:53:26.193 * Background saving terminated with success
+1:M 20 May 2022 07:18:37.731 * 1 changes in 900 seconds. Saving...
+1:M 20 May 2022 07:18:37.744 * Background saving started by pid 24
+24:C 20 May 2022 07:18:37.756 * DB saved on disk
+24:C 20 May 2022 07:18:37.760 * RDB: 0 MB of memory used by copy-on-write
+1:M 20 May 2022 07:18:37.850 * Background saving terminated with success
+1:M 20 May 2022 07:23:38.092 * 10 changes in 300 seconds. Saving...
+1:M 20 May 2022 07:23:38.098 * Background saving started by pid 25
+25:C 20 May 2022 07:23:38.112 * DB saved on disk
+25:C 20 May 2022 07:23:38.115 * RDB: 0 MB of memory used by copy-on-write
+1:M 20 May 2022 07:23:38.204 * Background saving terminated with success
+1:M 20 May 2022 09:34:11.186 * 1 changes in 900 seconds. Saving...
+1:M 20 May 2022 09:34:11.195 * Background saving started by pid 26
+26:C 20 May 2022 09:34:11.228 * DB saved on disk
+26:C 20 May 2022 09:34:11.236 * RDB: 0 MB of memory used by copy-on-write
+1:M 20 May 2022 09:34:11.302 * Background saving terminated with success
+1:M 20 May 2022 09:39:12.035 * 10 changes in 300 seconds. Saving...
+1:M 20 May 2022 09:39:12.044 * Background saving started by pid 27
+27:C 20 May 2022 09:39:12.055 * DB saved on disk
+27:C 20 May 2022 09:39:12.058 * RDB: 0 MB of memory used by copy-on-write
+1:M 20 May 2022 09:39:12.149 * Background saving terminated with success
+1:C 25 May 2022 03:38:54.732 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 25 May 2022 03:38:54.741 # Redis version=5.0.12, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 25 May 2022 03:38:54.749 # Configuration loaded
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 5.0.12 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 1
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+1:M 25 May 2022 03:38:54.799 # Server initialized
+1:M 25 May 2022 03:38:54.804 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 25 May 2022 03:38:54.816 * Reading RDB preamble from AOF file...
+1:M 25 May 2022 03:38:57.923 * Reading the remaining AOF tail...
+1:M 25 May 2022 03:38:59.650 * DB loaded from append only file: 4.833 seconds
+1:M 25 May 2022 03:38:59.657 * Ready to accept connections
+1:M 25 May 2022 03:39:55.028 * 10000 changes in 60 seconds. Saving...
+1:M 25 May 2022 03:39:55.086 * Background saving started by pid 18
+18:C 25 May 2022 03:39:55.158 * DB saved on disk
+18:C 25 May 2022 03:39:55.173 * RDB: 0 MB of memory used by copy-on-write
+1:M 25 May 2022 03:39:55.197 * Background saving terminated with success

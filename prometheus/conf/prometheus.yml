@@ -1,0 +1,16 @@
+global:
+  scrape_interval: 10s
+  evaluation_interval: 10s
+scrape_configs:
+  - job_name: prometheus_demo
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["172.17.0.5:8080"]
+        labels:
+          instance: openresty_prometheus_demo
+  - job_name: frigate
+    metrics_path: /prometheus/metrics
+    static_configs:
+      - targets: ["172.17.0.6:18080"]
+        labels:
+          instance: frigate

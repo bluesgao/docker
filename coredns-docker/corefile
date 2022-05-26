@@ -1,0 +1,8 @@
+.:53 {
+    hosts {
+        10.0.0.1 my.host.com // 你域名和ip
+        fallthrough
+    }
+    forward . 114.114.114.114:53 //你的备用 dns
+    log
+}
